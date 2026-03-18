@@ -37,6 +37,12 @@ Para garantir que o assistente de IA atuasse estritamente como um Arquiteto de D
     
     Passo 5: Script SQL para ingestão (Comando COPY do S3 para Redshift).
 
-Passo 6: Criação da DAG no Airflow para orquestrar os passos 2, 4 e 5.
+    Passo 6: Criação da DAG no Airflow para orquestrar os passos 2, 4 e 5.
 
-Confirme o entendimento destas regras com um "Ciente." e, em seguida, forneça imediatamente o código completo do Passo 1.
+    Confirme o entendimento destas regras com um "Ciente." e, em seguida, forneça imediatamente o código completo do Passo 1.
+
+
+
+
+
+
