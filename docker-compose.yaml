@@ -1,0 +1,24 @@
+version: '3.8' # Versão da linguagem do Docker Compose
+
+services:
+
+  postgres_oltp:
+    image: postgres:15                
+    container_name: fintech_postgres  
+    environment:
+      - POSTGRES_USER=fintech_user    
+      - POSTGRES_PASSWORD=aml_admin   
+      - POSTGRES_DB=aml_db            
+    ports:
+      - "5432:5432"               
+    volumes:
+      - pg_data:/var/lib/postgresql/data 
+    networks:
+      - fintech_network               
+
+volumes:
+  pg_data: 
+
+networks:
+  fintech_network:
+    driver: bridge
